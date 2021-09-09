@@ -33,7 +33,8 @@
     "fix": "eslint --fix \"src/**/*.js\" -f ./config/formatter.eslint.js && chalk green \"✓ Attempted to automatically fix JavaScript errors\n\" && stylelint --fix \"src/**/*.scss\" && chalk green \"✓ Attempted to automatically fix CSS errors\n\" && echo \"\nAll set! Run 'npm run lint' to check for errors \nthat need to be fixed manually.\n\"",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js",
     "deploy": "npm run build && gh-pages -d dist",
-    "test": "npm run lint && echo \"Checking assignment requirements...\" && jest && chalk green \"✓ All tests passed. Nice work!\""
+    "test": "npm run lint && echo \"Checking assignment requirements...\" && jest && chalk green \"✓ All tests passed. Nice work!\"",
+	 "chalktest": "chalk green \"This should be green.\""
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
