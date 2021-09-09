@@ -1,5 +1,4 @@
-    name: GitHub Classroom Workflow
-
+    name: Chalk CLI Color Test
     on: [push]
 
     jobs:
@@ -8,4 +7,5 @@
         runs-on: ubuntu-latest
         steps:
           - uses: actions/checkout@v2
-          - uses: education/autograding@v1
+          - name: Run color test
+            run: npm run chalk green "This log should be green."
